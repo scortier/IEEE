@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>IEEE-ACTS</title>
-    <link rel="icon" href="./img/ieeeks.png">
+    <link rel="icon" href="./img/ieee4.png">
     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -15,7 +15,13 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
 <style>
-      .over-shadow::after{
+      .nitslogo{
+            margin-right:4%;
+        }
+        .ieeelogo{
+            margin-right:2%;
+        }
+    .over-shadow::after{
          content: ""; 
     position: absolute;
     top: 0;
@@ -25,35 +31,58 @@
     background:#000000 !important;
     opacity: .8;
     }
-    .welcome-area{
-        pointer-events:none;
-        height:100vh;
-
+    .text-size{
+        font-size:1.4rem;
+    }
+    .text-size1{
+        font-size:1.6rem;
     }
         #more {display: none;}
         #moreAboutTheme {display: none;}
         #moreAboutNit {display: none;}
-         .screen-res div{
+    .screen-res .heading{
         font-size:2.2rem;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
     }
-   @media only screen and (max-width: 767px) {
-            .screen-res div{
-                font-size:1.5rem;
+    @media only screen and (max-width: 767px) {
+            .screen-res .heading{
+                font-size:1.3rem;
               } 
-              .mobile-view{
-                margin-left:2%;
-              } 
+              .text-size, .text-size1{
+                font-size:1.2rem;
+              }
+              .nitslogo{
+            margin-right:15%;
+        }
+        .ieeelogo{
+            margin-right:15%;
+        } 
+        .mobile-view{
+            margin-left:2%;
+        } 
         }
         .wow{
             color: white;
         }
+        #CFP {
+  padding-top: 20px;
+  font-size: 18px;
+}
+.btn{
+    border:2px solid #ffa00f;
+    padding:10px;
+    margin-left:20%;
+}
+.btn a:hover{
+    text-decoration:none;
+}
+
 </style>
 </head>
 
 <body>
-    <!-- Header Area Start -->
+     <!-- Header Area Start -->
     <header class="header-area">
         <div class="classy-nav-container breakpoint-off">
             <div class="container">
@@ -64,7 +93,7 @@
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
-
+                    <img src="./img/nitl.png" alt="" width="70px" height="70px" class="nitslogo"> 
                     <!-- Menu -->
                     <div class="classy-menu">
                         <!-- Menu Close Button -->
@@ -79,32 +108,21 @@
                                     <ul class="dropdown">
                                         <li><a href="index.html#about">- About </a></li>
                                         <li><a href="index.html#theme">-Theme</a></li>
-                                        <li><a href="index.html#papers">-Call for Papers</a></li>
+                                         <li><a href="index.html#papers">-Call for Papers</a></li> 
                                         <li><a href="index.html#nits">-NIT Silchar</a></li>
                                         <li><a href="index.html#department">-Department</a></li>
                                         <li><a href="index.html#ieee">-IEEE ComSoc</a></li>
                                     </ul>
                                 </li>
-                                
-                                <li><a href="tracks.html">Papers</a></li>
-                                <li><a href="organizing.html">Committee</a>
+                                  <li><a href="tracks.html">Call For Papers</a>
                                     <ul class="dropdown">
-                                        <li><a href="organizing.html#chiefpatron">- Patrons</a></li>
-                                        <li><a href="organizing.html#general">- Organising</a></li>
-                                        <li><a href="organizing.html#technical">- Technical</a></li>
-                                        <li><a href="organizing.html#financeco">- Finance</a></li>
-                                        <li><a href="organizing.html#panelco">- Panel</a></li>
-                                        <li><a href="organizing.html#publicationco">- Publication</a></li>
-                                        <li><a href="organizing.html#publicityco">- Publicity</a></li>
-                                        <li><a href="organizing.html#websiteco">- Website</a></li>
-                                         <li><a href="organizing.html#womenco">- Women in Engg.</a></li>
-                                        <li><a href="organizing.html#industryco">- Industry</a></li>
-                                         <li><a href="organizing.html#logisticsco">- Logistic</a></li>
-                                          <!-- <li><a href="organizing.html#advisory">- Advisory</a></li> -->
-                                           <li><a href="organizing.html#local">- Local Organisers</a></li>
-                                        <li><a href="organizing.html#studentco">- Student Travel</a></li>
-                                       
+                                        <li><a href="#cfp">Call For Papers</a></li>
+                                        <li><a href="#tracks">Tracks</a></li>
+                                        
                                     </ul>
+                                </li>
+                                
+                                <li><a href="organizing.html">Committee</a>
                                 </li>
                                 <li><a href="index.html#speakers">Speakers</a></li>
                                 <li><a href="index.html#partners">Partners</a></li>
@@ -113,15 +131,17 @@
                         </div>
                         <!-- Nav End -->
                     </div>
-                    <img src="./img/nitl.png" alt="" width="70" height="70px" style="margin-right:4%;">
+                     <!-- Logo -->
+               <!--      <img style="margin-left: 110px;"src="./img/nitl.png" alt=""> -->
+                    <img src="./img/ieee4.png" alt="" width="80px" height="100px" class="ieeelogo">
+                    
                 </nav>
             </div>
         </div>
     </header>
     <!-- Header Area End -->
-
-  <!-- Welcome Area Start -->
-    <section class="welcome-area">
+    <!-- Header Area End -->
+ <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
             <!-- Single Slide -->
             <div class="single-welcome-slide bg-img bg-overlay jarallax over-shadow" style="background-image: url(img/gh2.jpg);">
@@ -130,24 +150,90 @@
                         <!-- Welcome Text -->
                         <div class="col-12">
                             <div class="welcome-text-two text-center screen-res">
-                                <div style="color: white;" data-animation="fadeInUp" data-delay="100ms">International Conference on </div>
-                                <div style="color: white;" data-animation="fadeInUp" data-delay="100ms">Advanced Communication Technologies and Signal Processing</div>
-                                <div style="color:white;" data-animation="fadeInUp" data-delay="300ms">(IEEE ACTS-2020)</div>
-                                <div style="color:white;" data-animation="fadeInUp" data-delay="300ms">22-24 May, 2020</div>
-                                <div style="color: #f4de9c;font-size: 1.7rem" data-animation="fadeInUp" data-delay="100ms">Technical Co-Sponsorship by IEEE Kolkata Section</div>
-                                <div style="color: #f4de9c;font-size: 1.7rem" data-animation="fadeInUp" data-delay="100ms">National Institute Of Technology, Silchar</div>
-                                <br>
-                                <br>
+                                <div class="heading" style="color: #c89148;margin-bottom:2%;" data-animation="fadeInUp" data-delay="100ms">National Institute Of Technology, Silchar </div>
+                                <div class="heading" style="color: white;" data-animation="fadeInUp" data-delay="100ms">International Conference on </div>
+                                <div class="heading" style="color: white;" data-animation="fadeInUp" data-delay="100ms">Advanced Communication Technologies and <br>Signal Processing</div>
+                                <div class="text-size" style="color:#c89148;font-weight:600" data-animation="fadeInUp" data-delay="300ms">(IEEE ACTS-2020)</div>
+                                <div class="text-size" style="color:#c89148;font-weight:600" data-animation="fadeInUp" data-delay="300ms">22-24 May, 2020</div>
+                                <div class="text-size1" style="color: #4682bb;font-weight:600" data-animation="fadeInUp" data-delay="100ms">Technically Co-Sponsored by IEEE Kolkata Section</div>  
+                                  <div class="single-sponsor wow fnadeIUp" data-wow-delay="300ms">
+                                <img src="img/ieeeks.png" height="120px" style="width:18%;margin-left:42%;height:auto;" alt="">
+                            </div>
+                            <br>
+                                <div class="text-size1" style="color: #4682bb; font-style:oblique ; font-weight:500" data-animation="fadeInUp" data-delay="100ms"><i>Department of Electronics And Communication</i></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-               </section>
+                     <!-- Single Slide -->
+       <div class="single-welcome-slide bg-img bg-overlay jarallax over-shadow" style="background-image: url(img/download.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12">
+                            <div class="welcome-text-two text-center screen-res">
+                                <div class="heading" style="color: #c89148;margin-bottom:2%;" data-animation="fadeInUp" data-delay="100ms">National Institute Of Technology, Silchar </div>
+                                <div class="heading" style="color: white;" data-animation="fadeInUp" data-delay="100ms">International Conference on </div>
+                                <div class="heading" style="color: white;" data-animation="fadeInUp" data-delay="100ms">Advanced Communication Technologies and <br>Signal Processing</div>
+                                <div class="text-size" style="color:#c89148;font-weight:600" data-animation="fadeInUp" data-delay="300ms">(IEEE ACTS-2020)</div>
+                                <div class="text-size" style="color:#c89148;font-weight:600" data-animation="fadeInUp" data-delay="300ms">22-24 May, 2020</div>
+                                <div class="text-size1" style="color: #4682bb;font-weight:600" data-animation="fadeInUp" data-delay="100ms">Technically Co-Sponsored by IEEE Kolkata Section</div>  
+                                  <div class="single-sponsor wow fnadeIUp" data-wow-delay="300ms">
+                                <img src="img/ieeeks.png" height="120px" style="width:18%;margin-left:42%;height:auto;" alt="">
+                            </div>
+                            <br>
+                                <div class="text-size1" style="color: #4682bb; font-style:oblique ; font-weight:500" data-animation="fadeInUp" data-delay="100ms"><i>Department of Electronics And Communication</i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="single-welcome-slide bg-img bg-overlay jarallax over-shadow" style="background-image: url(img/4.bmp);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12">
+                            <div class="welcome-text-two text-center screen-res">
+                                <div class="heading" style="color: #c89148;margin-bottom:2%;" data-animation="fadeInUp" data-delay="100ms">National Institute Of Technology, Silchar </div>
+                                <div class="heading" style="color: white;" data-animation="fadeInUp" data-delay="100ms">International Conference on </div>
+                                <div class="heading" style="color: white;" data-animation="fadeInUp" data-delay="100ms">Advanced Communication Technologies and <br>Signal Processing</div>
+                                <div class="text-size" style="color:#c89148;font-weight:600" data-animation="fadeInUp" data-delay="300ms">(IEEE ACTS-2020)</div>
+                                <div class="text-size" style="color:#c89148;font-weight:600" data-animation="fadeInUp" data-delay="300ms">22-24 May, 2020</div>
+                                <div class="text-size1" style="color: #4682bb;font-weight:600" data-animation="fadeInUp" data-delay="100ms">Technically Co-Sponsored by IEEE Kolkata Section</div>  
+                                  <div class="single-sponsor wow fnadeIUp" data-wow-delay="300ms">
+                                <img src="img/ieeeks.png" height="120px" style="width:18%;margin-left:42%;height:auto;" alt="">
+                            </div>
+                            <br>
+                                <div class="text-size1" style="color: #4682bb; font-style:oblique ; font-weight:500" data-animation="fadeInUp" data-delay="100ms"><i>Department of Electronics And Communication</i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Icon -->
+      <!--   <div class="icon-scroll" id="scrollDown"></div> -->
+    </section>
     <!-- Welcome Area End -->
+     <!-- Welcome Area End -->
+    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" id="speaker_part"style="background-image: url(img/bg-img/3.jpg);margin-top:0%;">
+        <div class="container" id="cfp">
+            <div class="row">
+                <h1  class="wow fadeInUp " data-wow-delay="300ms" style="font-size:1.6rem; color: #ffa00f;">Call For Papers</h1>
+                <p class="wow fadeInUp " id="CFP" data-wow-delay="300ms" ><b style="color:#fff;"></b>After peer review, all accepted and presented papers of <b style="color: tan; ">IEEE</b>  ACTS-2020, will appear in <b style="color: tan; ">IEEE</b>  Xplore and indexed in SCOPUS, Google Scholar and other major indexing. There will be a few workshops co-located with the conference. Proposals to organize workshops in-line with the theme and main conference are also encouraged. In addition, those interested in the conference are also encouraged to submit proposals for tutorials and PhD Forum.
+                    Limited funds are available for students to travel to the conference for paper presentation and participation.
+                </p>    
+            </div>
+
+        </div>
+
+    </section>
+    
     <!--tracks start-->
     <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" id="speaker_part"style="background-image: url(img/bg-img/3.jpg);margin-top:0%;">
-        <div class="container" >
+        <div class="container" id="tracks">
             <div class="row">
                 <!-- Heading -->
                 <div class="col-sm-4 mobile-view" style="padding: 100px 40px 40px 0;">
@@ -183,6 +269,8 @@
                             <br>
                             <br>
                         </div>
+                        <ul>
+                        <li class="btn"><a href="ieee broucher modified 2.pdf" style="color: #fff;">Broucher</a> </li> </ul>
                 </div>
                 <div class="col-sm-4 mobile-view" style="padding: 100px 40px 40px 0;">
                         <div class="wow fadeInUp" data-wow-delay="100ms" style="font-size: 20px;text-align: left">
@@ -204,6 +292,8 @@
                             <br>
                             <br>
                     </div>
+                    <ul>
+                        <li class="btn"><a href="ieee broucher modified 2.pdf" style="color: #fff;">Broucher</a> </li> </ul>
                 </div>
                 <div class="col-sm-4 mobile-view" style="padding: 100px 40px 40px 0;">
                         <div class="wow fadeInUp" data-wow-delay="100ms" style="font-size: 20px;text-align: left">
@@ -218,14 +308,15 @@
                             <br>
                             <br>
                         </div>
+                        <ul>
+                        <li class="btn"><a href="ieee broucher modified 2.pdf" style="color: #fff;">Broucher</a> </li> </ul>
                 </div>
                 
             </div>
             </div>
             </section>
-
-        <!-- Footer Area Start -->
-    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
+  <!-- Footer Area Start -->
+    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0" id="contact">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
@@ -248,8 +339,8 @@
                             <div class="footer-contact-info">
                                 <p><i class="zmdi zmdi-map"></i>NIT SILCHAR,SILCHAR</p>
                                 <p><i class="zmdi zmdi-phone"></i>Assam-788010</p>
-                                <p><i class="zmdi zmdi-email"></i>+91-87892 86708</p>
-                                <p><i class="zmdi zmdi-globe"></i>director@nits.ac.in</p>
+                                <p><i class="zmdi zmdi-email"></i>+91-9435730057</p>
+                                <p><i class="zmdi zmdi-globe"></i>arif.ece.nits@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -292,7 +383,6 @@
         </div>
     </footer>
     <!-- Footer Area End -->
-    
     <!-- jQuery 2.2.4 -->
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->

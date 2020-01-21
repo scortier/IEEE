@@ -35,6 +35,7 @@ Last Update: March 14, 2019
 --------------------------------------------- */
 /* Import Fonts & All CSS */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic);
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
 @import url(css/default-assets/classy-nav.css);
@@ -2744,3 +2745,61 @@ input:required {
   text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
+/*---------------------
+  Event Counter
+-----------------------*/
+
+.event-counter {
+  background:#0e0e11;
+  padding: 55px 0 55px 0;
+  text-align: center;
+}
+
+.event-counter .event-name h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 11px;
+}
+
+.event-counter .event-name h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.event-counter .event-name span {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px 11px 9px 15px;
+  background: #F21E7D;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.event-counter .countdown-timer {
+  margin-top: -10px;
+}
+
+.event-counter .countdown-timer .cd-item {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.event-counter .countdown-timer .cd-item:last-child {
+  margin-right: 0;
+}
+
+.event-counter .countdown-timer .cd-item span {
+  display: block;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.event-counter .countdown-timer .cd-item p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
